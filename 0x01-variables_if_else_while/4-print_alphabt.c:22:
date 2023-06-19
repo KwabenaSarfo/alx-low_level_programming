@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+/**
+ * main - This for printing alphabet without q and e.
+ *
+ * Return: Always 0 (Success)
+ */
+
+
+int main(void)
+{
+	char t;
+
+	for (t = 'a'; t <= 'z'; t++)
+	{
+		if (t != 'q' && letter != 'e')
+		{
+			putchar(t);
+		}
+	}
+
+	putchar('\n');
+
+	return (0);
+}
