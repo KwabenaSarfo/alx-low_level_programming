@@ -15,7 +15,7 @@ void print_times_table(int n)
 			for (b = 0; b <= n; b++)
 			{
 				d = b * a;
-				if (j == 0)
+				if (b == 0)
 				{
 					_putchar(d + '0');
 				} else if (d < 10 && b != 0)
