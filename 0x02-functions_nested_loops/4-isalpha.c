@@ -4,7 +4,7 @@
  * _isalpha - This code checks for alphabetic character
  * Return: 1
  */
-int _isalpha(int s)
+int _isalpha(int c)
 {
-	return ((s >= 'a' && s <= 'z') || (s >= 'A' && s <= 'Z'));
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
