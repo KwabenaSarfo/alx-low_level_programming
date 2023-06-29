@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * leet - encode into 1337speak
+ * leet - This project encode into 1337speak
  * @m: input value
  * Return: m value
  */
-char *leet(char *n)
+char *leet(char *m)
 {
 	int k, i;
 	char s1[] = "aAeEoOtTlL";
