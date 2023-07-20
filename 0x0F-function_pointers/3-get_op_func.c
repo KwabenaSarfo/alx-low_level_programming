@@ -25,5 +25,5 @@
 		while (ops[d].op != NULL && *(ops[d].op) != *s)
 			d++;
 
-		return (ops[d].d);
+		return (ops[d]);
 	}
