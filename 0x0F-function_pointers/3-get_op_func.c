@@ -17,13 +17,12 @@
 			{"%", op_mod},
 			{NULL, NULL},
 		};
-
-
-		int d = 0;
-
-
-		while (ops[d].op != NULL && *(ops[d].op) != *s)
-			d++;
-
-		return (ops[d]);
-	}
+	int d = 0;
+while (ops[d].op != NULL)
+{
+	 if (*(ops[d].op) == *s)
+		 return (ops[d].f);
+	 d++;
+}
+ return (NULL);
+}
