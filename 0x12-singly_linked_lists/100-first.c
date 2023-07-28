@@ -5,6 +5,7 @@ void first(void) __attribute__ ((constructor));
 /**
 * first- This project prints a sentence before the main
 * function is executed
+* Project for print
 */
 void first(void)
 {
