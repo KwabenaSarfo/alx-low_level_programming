@@ -4,11 +4,11 @@
  * using most m bytes from src
  * @dest: input
  * @src: input
- * @m: input
+ * @n: input
  *
  * Return: dest
  */
-char *_strncat(char *dest, char *src, int m)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i;
 	int d;

@@ -1,13 +1,13 @@
 #include "main.h"
 /**
  * _isupper - uppercase letters
- * @ch: char
+ * @h: char
  *
  * Return: 0 or 1
  */
-int _isupper(int ch)
+int _isupper(int h)
 {
-	if (ch >= 'A' && ch <= 'Z')
+	if (h >= 'A' && h <= 'Z')
 		return (1);
 	return (0);
 }

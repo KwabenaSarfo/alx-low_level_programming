@@ -3,11 +3,11 @@
  *_memcpy - The function that copies memory area
  *@dest: memory stored
  *@src: memory copied
- *@m: number of bytes
+ *@n: number of bytes
  *
  *Return: copied memory
  */
-char *_memcpy(char *dest, char *src, unsigned int m)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	int c = 0;
 	int i = n;
@@ -16,7 +16,7 @@ char *_memcpy(char *dest, char *src, unsigned int m)
 	for (; c < i; c++)
 	{
 		dest[c] = src[c];
-		m--;
+		n--;
 	}
 	return (dest);
 }
