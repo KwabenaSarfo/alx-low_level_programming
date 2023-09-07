@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 	int leng1, leng2, leng, x, carry, digit1, digit2, *result, c = 0;
 
 	b1 = argv[1], b2 = argv[2];
-	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
+	if (argc != 3 || !is_digit(b1) || !is_digit(b2))
 		errors();
 	leng1 = _strlen(b1);
 	leng2 = _strlen(b2);
@@ -71,14 +71,14 @@ int main(int argc, char *argv[])
 	if (!result)
 		return (1);
 	for (x = 0; x <= leng1 + leng2; x++)
-		result[i] = 0;
+		result[x] = 0;
 	for (leng1 = leng1 - 1; leng1 >= 0; leng1--)
 	{
-		digit1 = s1[leng1] - '0';
+		digit1 = b1[leng1] - '0';
 		carry = 0;
-		for (leng2 = _strlen(s2) - 1; leng2 >= 0; leng2--)
+		for (leng2 = _strlen(b2) - 1; leng2 >= 0; leng2--)
 		{
-			digit2 = s2[leng2] - '0';
+			digit2 = b2[leng2] - '0';
 			carry += result[leng1 + leng2 + 1] + (digit1 * digit2);
 			result[leng1 + leng2 + 1] = carry % 10;
 			carry /= 10;
