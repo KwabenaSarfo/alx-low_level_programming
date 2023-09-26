@@ -1,3 +1,4 @@
+#include <stdlib.h>
 /**
  * add_nodeint - adds a new node
  * @head: pointer
