@@ -25,15 +25,15 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	while (k < index - 1)
 	{
-		if (!temp12 || !(temp->next))
+		if (!temp12 || !(temp12->next))
 			return (-1);
-		temp12 = temp->next;
+		temp12 = temp12->next;
 		k++;
 	}
 
 
-	current = temp->next;
-	temp->next = current->next;
+	current = temp12->next;
+	temp12->next = current->next;
 	free(current);
 
 	return (1);
