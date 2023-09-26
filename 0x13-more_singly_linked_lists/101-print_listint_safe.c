@@ -31,22 +31,22 @@ size_t looped_listint_len(const listint_t *head)
 			while (tortoise17 != hare21)
 			{
 				nodes++;
-				tortoise17 = tortoise->next;
-				hare21 = hare->next;
+				tortoise17 = tortoise17->next;
+				hare21 = hare21->next;
 			}
 
-			tortoise17 = tortoise->next;
-			while (tortoise17 != hare)
+			tortoise17 = tortoise17->next;
+			while (tortoise17 != hare21)
 			{
 				nodes++;
-				tortoise17 = tortoise->next;
+				tortoise17 = tortoise17->next;
 			}
 
 			return (nodes);
 		}
 
-		tortoise17 = tortoise->next;
-		hare21 = (hare->next)->next;
+		tortoise17 = tortoise17->next;
+		hare21 = (hare21->next)->next;
 	}
 
 	return (0);
